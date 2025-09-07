@@ -8,7 +8,7 @@ export default function Home(){
             <h1 className="text-[50px] text-white font semi-bold">
               Hi, I&apos;m Zara
               <span className="text-transport bg-clip-text bg-gradient-r from-purple-500 to-cyan-500">
-                Web Development    
+                 
               </span>
             </h1>
             <p className="text-gray-200 hidden md:block">
