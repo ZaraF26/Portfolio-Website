@@ -10,7 +10,7 @@ export default function HeroSection() {
       {/* Example profile image - optional */}
       <div className="mb-6">
         <Image
-          src="/assets/profile.png" // put profile.png inside /public/assets/
+          src="/public/new-main-bg.png" // put profile.png inside /public/assets/
           alt="Profile"
           width={120}
           height={120}

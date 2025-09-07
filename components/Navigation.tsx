@@ -1,36 +1,19 @@
-"use client";
-
-import Link from "next/link";
-import Image from "next/image";
-
+import Link from 'next/link'
 export default function Navbar() {
   return (
-    <nav className="flex items-center justify-between p-4 bg-white shadow-md">
-      {/* Logo */}
-      <Link href="/" className="flex items-center">
-        <Image
-          src="/assets/logo.svg" // place logo.svg inside /public/assets/
-          alt="Logo"
-          width={40}
-          height={40}
-          priority
-        />
-      </Link>
-
-      {/* Links */}
-      <div className="space-x-6 font-medium">
-        <Link href="/projects" className="hover:text-blue-600 transition-colors">
-          Projects
-        </Link>
-        <Link href="/about" className="hover:text-blue-600 transition-colors">
-          About
-        </Link>
-        <Link href="/contact" className="hover:text-blue-600 transition-colors">
-          Contact
-        </Link>
+    <nav className="bg-white shadow-md">
+      <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+        {/* <Link href="/" className="text-xl font-bold text-indigo-600">
+          Zara
+        </Link> */}
+        <div className="space-x-6 text-gray-700 font-medium">
+          <Link href="/projects" className="hover:text-indigo-600">Projects</Link>
+          <Link href="/about" className="hover:text-indigo-600">About</Link>
+          <Link href="/contact" className="hover:text-indigo-600">Contact</Link>
+        </div>
       </div>
     </nav>
-  );
+  )
 }
 
 

@@ -4,22 +4,30 @@
 import Image from "next/image";
 import Link from "next/link";
 
+
+type Project = {
+  title: string;
+  description: string;
+  image: string;
+  demo: string;
+  repo: string;
+};
 export default function ProjectsGrid() {
-  const projects = [
-    {
-      title: "Portfolio Website",
-      description: "A personal portfolio built with Next.js & Tailwind.",
-      image: "/assets/project-3.jpg", // put this inside /public/assets/
-      demo: "https://your-portfolio.com", // external link
-      repo: "https://github.com/yourusername/portfolio", // external link
-    },
-    {
-      title: "Todo App",
-      description: "A simple todo app using React & TypeScript.",
-      image: "/assets/project-1.jpg",
-      demo: "https://your-todo-demo.com",
-      repo: "https://github.com/yourusername/todo-app",
-    },
+  const projects: Project[] = [
+  //   {
+  //     title: "Portfolio Website",
+  //     description: "A personal portfolio built with Next.js & Tailwind.",
+  //     image: "/assets/project-3.jpg", // put this inside /public/assets/
+  //     demo: "https://your-portfolio.com", // external link
+  //     repo: "https://github.com/yourusername/portfolio", // external link
+  //   },
+    // {
+    //   title: "Todo App",
+    //   description: "A simple todo app using React & TypeScript.",
+    //   image: "/assets/project-1.jpg",
+    //   demo: "https://your-todo-demo.com",
+    //   repo: "https://github.com/yourusername/todo-app",
+    // },
   ];
 
   return (
