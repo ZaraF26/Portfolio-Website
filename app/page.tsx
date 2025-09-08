@@ -3,8 +3,17 @@ import Link from 'next/link'
 export default function Home(){
   return(
     <main className='w-screen h-screen relative'>
-      <div className='flex items-center w-full h-full bg-cover bg-center' style={{backgroundImage: "url(/new-main-bg.png"}}>
-        <div className='pl-20 md:pl-40 pb-56 md:pb-20 flex flex-col gap-5 z-[10] max-w-[750px]'>
+      <div className="absolute top-0 left-0 w-full z-[30]">
+        <nav className="flex items-center justify-center px-6 md:px-10 py-6 text-white">
+          <div className="inline-flex items-center gap-6 md:gap-10 px-6 md:px-8 py-2 md:py-3 rounded-full bg-black/30 backdrop-blur-sm">
+            <Link href="/about" className="hover:text-gray-200 text-sm md:text-base">About</Link>
+            <Link href="/projects" className="hover:text-gray-200 text-sm md:text-base">Projects</Link>
+            <Link href="/contact" className="hover:text-gray-200 text-sm md:text-base">Contact</Link>
+          </div>
+        </nav>
+      </div>
+      <div className='flex items-center justify-center w-full h-full bg-cover bg-center' style={{backgroundImage: "url(/new-main-bg.png)"}}>
+        <div className='pb-56 md:pb-20 flex flex-col items-center gap-5 z-[10] max-w-[750px] text-center'>
             <h1 className="text-[50px] text-white font semi-bold">
               Hi, I&apos;m Zara
               <span className="text-transport bg-clip-text bg-gradient-r from-purple-500 to-cyan-500">
