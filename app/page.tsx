@@ -4,23 +4,22 @@ export default function Home(){
   return(
     <main className='w-screen h-screen relative'>
       <div className="absolute top-0 left-0 w-full z-[30]">
-        <nav className="flex items-center justify-center px-6 md:px-10 py-6 text-white">
-          <div className="inline-flex items-center gap-6 md:gap-10 px-6 md:px-8 py-2 md:py-3 rounded-full bg-black/30 backdrop-blur-sm">
-            <Link href="/about" className="hover:text-gray-200 text-sm md:text-base">About</Link>
-            <Link href="/projects" className="hover:text-gray-200 text-sm md:text-base">Projects</Link>
-            <Link href="/contact" className="hover:text-gray-200 text-sm md:text-base">Contact</Link>
-          </div>
+        <nav className="relative flex items-center justify-center gap-6 md:gap-10 px-6 md:px-10 py-6 text-gray-900">
+          <Link href="/about" className="hover:text-gray-600 text-sm md:text-base">About</Link>
+          <Link href="/projects" className="hover:text-gray-600 text-sm md:text-base">Projects</Link>
+          <Link href="/contact" className="hover:text-gray-600 text-sm md:text-base">Contact</Link>
         </nav>
       </div>
       <div className='flex items-center justify-center w-full h-full bg-cover bg-center' style={{backgroundImage: "url(/new-main-bg.png)"}}>
-        <div className='pb-56 md:pb-20 flex flex-col items-center gap-5 z-[10] max-w-[750px] text-center'>
-            <h1 className="text-[50px] text-white font semi-bold">
+        <div className='pb-56 md:pb-20 px-6 md:px-10 flex flex-col items-center gap-5 z-[10] max-w-[750px] text-center'>
+            <h1 className="text-[50px] text-gray-900 font semi-bold">
               Hi, I&apos;m Zara
               <span className="text-transport bg-clip-text bg-gradient-r from-purple-500 to-cyan-500">
                  
               </span>
             </h1>
-            <p className="text-gray-200 hidden md:block">
+            <a href="/cv.pdf" target="_blank" rel="noopener noreferrer" className="rounded-[20px] bg-blue-600 hover:bg-blue-500 px-5 py-3 text-lg text-white">View CV</a>
+            <p className="text-gray-600 hidden md:block">
               Lorem ipsum dolor- this always looked funny to me lol 
             </p>
             <div className="flex-col md:flex-row hidden md:flex">
@@ -55,8 +54,6 @@ export default function Home(){
     </main>
   )
 }
-
-
 
 
 
